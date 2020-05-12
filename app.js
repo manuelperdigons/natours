@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 // HTTP Headers
 app.use(helmet());
 
-// Development log in
+//// Development log in
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
